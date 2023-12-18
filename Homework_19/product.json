@@ -1,0 +1,67 @@
+[
+  {
+    "model": "catalog.product",
+    "pk": 2, "fields":
+  {
+    "product_name": "молоко",
+    "product_disc": "1 литр",
+    "image": "products/milk.jpg",
+    "category": 5,
+    "price": 100,
+    "data_created": "2023-12-18T18:59:16Z",
+    "data_changed": "2023-12-18T18:59:18Z"
+  }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3, "fields":
+  {
+    "product_name": "яблоко",
+    "product_disc": "зеленое",
+    "image": "products/apple.jpg",
+    "category": 8,
+    "price": 12,
+    "data_created": "2023-12-18T19:00:14Z",
+    "data_changed": "2023-12-18T19:00:15Z"
+  }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4, "fields":
+  {
+    "product_name": "груша",
+    "product_disc": "зеленая",
+    "image": "products/grusha.jpg",
+    "category": 8,
+    "price": 10,
+    "data_created": "2023-12-18T19:00:14Z",
+    "data_changed": "2023-12-18T19:00:15Z"
+  }
+  },
+   {
+    "model": "catalog.product",
+    "pk": 5, "fields":
+  {
+    "product_name": "мандарин",
+    "product_disc": "сладкий, без косточек",
+    "image": "products/orange.jpg",
+    "category": 8,
+    "price": 15,
+    "data_created": "2023-12-18T19:00:14Z",
+    "data_changed": "2023-12-18T19:00:15Z"
+  }
+  },
+   {
+    "model": "catalog.product",
+    "pk": 6, "fields":
+  {
+    "product_name": "творог",
+    "product_disc": "свежий, мягкий",
+    "image": "products/tvorog.jpg",
+    "category": 5,
+    "price": 300,
+    "data_created": "2023-12-18T18:59:16Z",
+    "data_changed": "2023-12-18T18:59:18Z"
+  }
+  }
+]

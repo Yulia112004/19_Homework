@@ -1,0 +1,38 @@
+﻿[
+  {
+    "model": "catalog.category",
+    "pk": 5,
+    "fields":
+    {
+      "category_name": "молочные",
+      "disc": "Молочные продукты (молоко, творог, кефир)"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 6,
+    "fields":
+    {
+      "category_name": "мясные",
+      "disc": "мясные товары"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 7,
+    "fields":
+    {
+      "category_name": "овощи",
+      "disc": "огурцы, картошка, помидоры"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 8,
+    "fields":
+    {
+      "category_name": "фрукты",
+      "disc": "яблоки, мандарины, груши"
+    }
+  }
+]
