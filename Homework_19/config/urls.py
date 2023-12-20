@@ -18,7 +18,14 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
+from catalog import views
+from catalog.views import product_card
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('catalog.urls'))
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('', include('catalog.urls', namespace="catalog")),
+    path('product/<pk>', product_card),
+]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

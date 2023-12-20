@@ -17,11 +17,14 @@ class Product(models.Model):
     image = models.ImageField(upload_to='products/', verbose_name='изображение')
     category = models.ForeignKey(Category, on_delete=models.CASCADE, verbose_name='категория')
     price = models.IntegerField(verbose_name='цена за штуку')
-    data_created = models.DateTimeField(verbose_name='дата создания')
-    data_changed = models.DateTimeField(verbose_name='дата последнего изменения')
+    data_created = models.DateField(verbose_name='дата создания')
+    data_changed = models.DateField(verbose_name='дата последнего изменения')
 
     def __str__(self):
         return f'{self.product_name} - {self.price} ({self.category})'
+
+    def short_desription(self):
+        return self.product_disc[:100]
 
     class Meta:
         verbose_name = 'товар'
@@ -31,9 +34,10 @@ class Product(models.Model):
 class Contact(models.Model):
     country = models.CharField(max_length=100)
     inn = models.CharField(max_length=12)
-    address = models.CharField(max_length=200)
+    adress = models.CharField(max_length=200)
 
     def __str__(self) -> str:
-        return f"{self.country} ({self.address})"
+        return f"{self.country} ({self.adress})"
+
 
 

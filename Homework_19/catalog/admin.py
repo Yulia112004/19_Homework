@@ -13,5 +13,5 @@ class CategoryAdmin(admin.ModelAdmin):
     list_display = ('id', 'category_name',)
 
 @admin.register(Contact)
-class CategoryAdmin(admin.ModelAdmin):
-    list_display = "pk", "country", "inn", "address"
+class ContactAdmin(admin.ModelAdmin):
+    list_display = ('id', 'country', 'inn', 'adress',)
